@@ -9,7 +9,7 @@ iwconfig wlan1 txpower 30 ;
 iwconfig wlan0 txpower 30 ; 
 ifconfig wlan1 up ;
 ifconfig wlan0 up ;
-airmon-ng start wlan0 ;
+airmon-ng start wlan1 ;
 service network-manager restart
 
  
