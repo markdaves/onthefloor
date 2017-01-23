@@ -1,0 +1,15 @@
+#!/bin/bash
+
+ifconfig wlan1 down ;
+ifconfig wlan0 down ;
+macchanger -r wlan1 ;
+macchanger -r wlan0 ; 
+iw reg set BO ;
+iwconfig wlan1 txpower 30 ;
+iwconfig wlan0 txpower 30 ; 
+ifconfig wlan1 up ;
+ifconfig wlan0 up ;
+airmon-ng start wlan0 ;
+service network-manager restart
+
+ 

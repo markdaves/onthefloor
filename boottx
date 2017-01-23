@@ -1,0 +1,9 @@
+#!/bin/bash
+
+ifconfig wlan1mon down ; iw reg set BO ; ifconfig wlan1mon up ; iwconfig wlan1mon txpower 30
+
+
+
+
+
+

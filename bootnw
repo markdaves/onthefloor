@@ -1,0 +1,4 @@
+#!/bin/bash
+
+ifconfig wlan0 down ; macchanger -r wlan0 ; ifconfig wlan0 up ; ifconfig wlan1 down ; macchanger -r wlan1 ; ifconfig wlan1 up ; service network-manager restart ; airmon-ng start wlan1
+
